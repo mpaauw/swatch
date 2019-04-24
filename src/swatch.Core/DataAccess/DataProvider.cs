@@ -7,7 +7,7 @@ namespace swatch.Core.DataAccess
 {
     public abstract class DataProvider : IDataProvider
     {
-        protected readonly IDataProviderConfiguration configuration;
+        protected IDataProviderConfiguration configuration;
 
         public abstract string Create<T>(T payload);
 
